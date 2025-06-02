@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <title>Le Creuset Noir</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Le Creuset Noir</h1>
-        <p>Explorations spirituelles, tabous et vérités occultées</p>
-    </header>
+    <!-- Code d'accès -->
+    <div id="access-modal" class="modal">
+        <div class="modal-content">
+            <h2>Entrez le code d'accès</h2>
+            <input type="text" id="access-code" placeholder="Code d'accès">
+            <p id="error-message" class="error"></p>
+            <button onclick="validateAccess()">Valider</button>
+        </div>
+    </div>
 
-    <main>
-        <h2>Bienvenue</h2>
-        <p>Ce blog propose une plongée dans la foi, l'ésotérisme et les sujets que d'autres préfèrent éviter.</p>
+    <!-- Contenu principal -->
+    <div id="main-content" style="display: none;">
+        <div class="navbar">
+            <button onclick="showSection('home')">Accueil</button>
+            <button onclick="showSection('series1')">Série 1</button>
+            <button onclick="showSection('series2')">Série 2</button>
+        </div>
 
-        <h3>Articles récents</h3>
-        <ul>
-            <li><a href="#">La véritable histoire de l’humanité – Partie 1 (bientôt)</a></li>
-            <!-- Tu pourras ajouter ici d'autres articles -->
-        </ul>
-    </main>
+        <div id="home" class="section">
+            <h1>Bienvenue sur Le Creuset Noir</h1>
+            <p>Explorations spirituelles, vérités oubliées, et foi non conventionnelle.</p>
+            <div class="video-placeholder">Vidéo d’introduction à venir</div>
+        </div>
 
-    <footer>
-        <p>© 2025 Le Creuset Noir</p>
-    </footer>
+        <div id="series1" class="section">
+            <h2>Série 1</h2>
+            <div class="video-placeholder">Placeholder pour vidéo 1</div>
+        </div>
+
+        <div id="series2" class="section">
+            <h2>Série 2</h2>
+            <div class="video-placeholder">Placeholder pour vidéo 2</div>
+        </div>
+    </div>
 </body>
 </html>
