@@ -1,33 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0d0d0d;
-    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
     margin: 0;
     padding: 0;
+    transition: 0.3s;
 }
 
-header {
-    background-color: #1a1a1a;
-    padding: 20px;
-    text-align: center;
+.navbar {
+    background-color: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    z-index: 1000;
 }
 
-main {
-    padding: 20px;
+.navbar button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-a {
-    color: #ff8800;
-    text-decoration: none;
-}
-
-a:hover {
+.navbar button:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #1a1a1a;
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+}
+
+.modal-content {
+    background-color: #2e2e2e;
+    padding: 30px;
+    border-radius: 8px;
     text-align: center;
+    box-shadow: 0 0 15px #000;
+}
+
+input[type="text"] {
     padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.error {
+    color: red;
+}
+
+.section {
+    display: none;
+    padding: 80px 20px 20px; /* espace pour la navbar */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bbb;
+    border-radius: 5px;
     margin-top: 20px;
 }
