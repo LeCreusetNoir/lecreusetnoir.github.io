@@ -126,3 +126,70 @@ input[type="text"] {
     height: 100%;
     border: 0;
 }
+/* --- Header avec image de fond --- */
+#home {
+    background: url('d2db6e29-fa9d-41e7-82ca-d7d5c6dba4c5.png') center/cover no-repeat;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* --- Section série 1 stylée --- */
+.series-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Encadré chapitres */
+.sidebar {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 220px;
+    max-width: 220px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #e6b800;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #e6b800;
+}
+
+/* Texte centré sous le titre */
+.series-description {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
