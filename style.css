@@ -139,7 +139,7 @@ input[type="text"] {
 }
 /* --- Header avec image de fond --- */
 #home {
-    background: url('d2db6e29-fa9d-41e7-82ca-d7d5c6dba4c5.png') center/cover no-repeat;
+    background: url('assets/banner.png') center/cover no-repeat;
     padding-top: 100px;
     padding-bottom: 40px;
     text-align: center;
