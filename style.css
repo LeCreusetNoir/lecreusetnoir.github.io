@@ -216,3 +216,17 @@ input[type="text"] {
     border-bottom: 2px solid #e6b800;
     margin-bottom: 30px;
 }
+
+/* Glitch background canvases on page sides */
+.glitch-canvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#glitch-left { left: 0; }
+#glitch-right { right: 0; }
